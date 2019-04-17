@@ -1,0 +1,70 @@
+include "target.tmh"
+int main()
+{
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
+	if(Init(&EventHandle)) return 1;
+	SetKBRate(32, 50);
+	SetKBLayout(KB_ENG);
+	SetShiftButton(&Joystick, S4, &Throttle, PSF, PSB, 0);
+	MapKeyIOUMD(&Joystick, TG1, SPC, SPC, SPC, SPC, SPC, SPC);
+	MapKeyIOUMD(&Joystick, S2, R_ALT+SPC, R_ALT+SPC, R_ALT+SPC, R_ALT+SPC, R_ALT+SPC, R_ALT+SPC);
+	MapKeyIOUMD(&Joystick, S3, 'n', 'n', 'n', 'n', 'n', 'n');
+	MapKeyIOUMD(&Joystick, H2U, L_CTL+UARROW, R_CTL+'s', L_CTL+UARROW, R_CTL+'s', L_CTL+UARROW, R_CTL+'s');
+	MapKeyIOUMD(&Joystick, H2R, 0, R_ALT+'s', 0, R_ALT+'s', 0, R_ALT+'s');
+	MapKeyIOUMD(&Joystick, H2D, L_CTL+DARROW, R_SHIFT+'s', L_CTL+DARROW, R_SHIFT+'s', L_CTL+DARROW, R_SHIFT+'s');
+	MapKeyIOUMD(&Joystick, H2L, 0, 's', 0, 's', 0, 's');
+	MapKeyIOUMD(&Joystick, H3U, 0, R_ALT+UARROW, 0, R_ALT+UARROW, 0, R_ALT+UARROW);
+	MapKeyIOUMD(&Joystick, H3R, 0, R_ALT+RARROW, 0, R_ALT+RARROW, 0, R_ALT+RARROW);
+	MapKeyIOUMD(&Joystick, H3D, 0, R_ALT+DARROW, 0, R_ALT+DARROW, 0, R_ALT+DARROW);
+	MapKeyIOUMD(&Joystick, H3L, 0, R_ALT+LARROW, 0, R_ALT+LARROW, 0, R_ALT+LARROW);
+	MapKeyIOUMD(&Joystick, H1U, 0, L_ALT+UARROW, 0, L_ALT+UARROW, 0, L_ALT+UARROW);
+	MapKeyIOUMD(&Joystick, H1D, 0, L_ALT+DARROW, 0, L_ALT+DARROW, 0, L_ALT+DARROW);
+	MapKeyIOUMD(&Joystick, H1L, 0, L_ALT+LARROW, 0, L_ALT+LARROW, 0, L_ALT+LARROW);
+	MapKeyIOUMD(&Joystick, H1R, 0, L_ALT+RARROW, 0, L_ALT+RARROW, 0, L_ALT+RARROW);
+	MapAxis(&Joystick, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Joystick, JOYX, 0, 0, 0, 0, 0);
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Joystick, JOYY, 0, 0, 0, 0, 0);
+	MapKeyIOUMD(&Throttle, MSP, L_CTL+'d', L_CTL+'d', L_CTL+'d', L_CTL+'d', L_CTL+'d', L_CTL+'d');
+	MapKeyIOUMD(&Throttle, MSU, L_SHIFT+UARROW, 0, L_SHIFT+UARROW, 0, L_SHIFT+UARROW, 0);
+	MapKeyIOUMD(&Throttle, MSR, L_SHIFT+RARROW, 0, L_SHIFT+RARROW, 0, L_SHIFT+RARROW, 0);
+	MapKeyIOUMD(&Throttle, MSD, L_SHIFT+DARROW, 0, L_SHIFT+DARROW, 0, L_SHIFT+DARROW, 0);
+	MapKeyIOUMD(&Throttle, MSL, L_SHIFT+LARROW, 0, L_SHIFT+LARROW, 0, L_SHIFT+LARROW, 0);
+	MapKeyIOUMD(&Throttle, SPDF, L_CTL+'b', L_CTL+'b', L_CTL+'b', L_CTL+'b', L_CTL+'b', L_CTL+'b');
+	MapKeyIOUMD(&Throttle, SPDB, L_SHIFT+'b', L_SHIFT+'b', L_SHIFT+'b', L_SHIFT+'b', L_SHIFT+'b', L_SHIFT+'b');
+	MapKeyIOUMD(&Throttle, CHF, L_ALT+'d', R_SHIFT+';', L_ALT+'d', R_SHIFT+';', L_ALT+'d', R_SHIFT+';');
+	MapKeyIOUMD(&Throttle, CHB, L_SHIFT+'d', 0, L_SHIFT+'d', 0, L_SHIFT+'d', 0);
+	MapKeyIOUMD(&Throttle, LTB, 'a', 0, 'a', 0, 'a', 0);
+	MapKeyIOUMD(&Throttle, LDGH, 0, PULSE+L_CTL+'\\', 0, PULSE+L_CTL+'\\', 0, PULSE+L_CTL+'\\');
+	MapKeyIOUMD(&Throttle, FLAPU, PULSE+L_SHIFT+'f', PULSE+L_SHIFT+'f', PULSE+L_SHIFT+'f', PULSE+L_SHIFT+'f', PULSE+L_SHIFT+'f', PULSE+L_SHIFT+'f');
+	MapKeyIOUMD(&Throttle, FLAPD, PULSE+'f', PULSE+'f', PULSE+'f', PULSE+'f', PULSE+'f', PULSE+'f');
+	MapKeyIOUMD(&Throttle, EACON, PULSE+L_SHIFT+'g', PULSE+L_SHIFT+'g', PULSE+L_SHIFT+'g', PULSE+L_SHIFT+'g', PULSE+L_SHIFT+'g', PULSE+L_SHIFT+'g');
+	MapKeyIOUMD(&Throttle, RDRNRM, PULSE+L_SHIFT+'h', PULSE+L_SHIFT+'h', PULSE+L_SHIFT+'h', PULSE+L_SHIFT+'h', PULSE+L_SHIFT+'h', PULSE+L_SHIFT+'h');
+	MapKeyIOUMD(&Throttle, EOLIGN, L_CTL+'t', L_CTL+'t', L_CTL+'t', L_CTL+'t', L_CTL+'t', L_CTL+'t');
+	MapKeyIOUMD(&Throttle, EACOFF, PULSE+L_CTL+'g', PULSE+L_CTL+'g', PULSE+L_CTL+'g', PULSE+L_CTL+'g', PULSE+L_CTL+'g', PULSE+L_CTL+'g');
+	MapKeyIOUMD(&Throttle, RDRDIS, PULSE+L_CTL+'h', PULSE+L_CTL+'h', PULSE+L_CTL+'h', PULSE+L_CTL+'h', PULSE+L_CTL+'h', PULSE+L_CTL+'h');
+	MapKeyIOUMD(&Throttle, CSU, '[', '[', '[', '[', '[', '[');
+	MapKeyIOUMD(&Throttle, CSD, ']', ']', ']', ']', ']', ']');
+	MapKeyIOUMD(&Throttle, CSR, R_SHIFT+'k', R_SHIFT+'k', R_SHIFT+'k', R_SHIFT+'k', R_SHIFT+'k', R_SHIFT+'k');
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCX, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCY, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_RIGHT, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_LEFT, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_FC, 0, 0, 0, 0, 0);
+
+}
+int EventHandle(int type, alias o, int x)
+{
+	DefaultMapping(&o, x);
+}

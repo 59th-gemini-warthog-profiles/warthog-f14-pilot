@@ -1,5 +1,41 @@
 local diff = {
 	["keyDiffs"] = {
+		["d3014pnilunilcd17vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "/",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Spoiler Only",
+		},
+		["d3014pnilunilcd17vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = ";",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Off",
+		},
+		["d3014pnilunilcd17vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "P",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Both",
+		},
 		["d3024pnilu3024cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -143,7 +179,7 @@ local diff = {
 			},
 			["name"] = "Heading Hold On",
 		},
-		["d3040pnilu3040cd21vd1vpnilvu-1"] = {
+		["d3040pnilu3040cd21vd-1vpnilvu1"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "A",
@@ -152,7 +188,7 @@ local diff = {
 					},
 				},
 			},
-			["name"] = "Autopilot On, else Off",
+			["name"] = "Autopilot Off, else On",
 		},
 		["d3058pnilu3058cd22vd1vpnilvu0"] = {
 			["added"] = {
@@ -164,6 +200,28 @@ local diff = {
 				},
 			},
 			["name"] = "MASTER RESET",
+		},
+		["d3074pnilunilcd56vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num+",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "Volume Up",
+		},
+		["d3075pnilunilcd56vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num-",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "Volume Down",
 		},
 		["d3079pnilunilcd55vd-0.5vpnilvunil"] = {
 			["added"] = {
@@ -246,6 +304,28 @@ local diff = {
 				},
 			},
 			["name"] = "PLM button",
+		},
+		["d3128pnilu3128cd19vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Left",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "Left Engine Cutoff",
+		},
+		["d3129pnilu3129cd19vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Right",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "Right Engine Cutoff",
 		},
 		["d3133pnilunilcd55vd0vpnilvunil"] = {
 			["added"] = {
@@ -334,6 +414,29 @@ local diff = {
 				},
 			},
 			["name"] = "Target designate down / VSL LO",
+		},
+		["d3211pnilunilcd25vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "H",
+					["reformers"] = {
+						[1] = "RCtrl",
+					},
+				},
+			},
+			["name"] = "Lights Hook Bypass CARRIER",
+		},
+		["d3211pnilunilcd25vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "H",
+					["reformers"] = {
+						[1] = "RAlt",
+						[2] = "RCtrl",
+					},
+				},
+			},
+			["name"] = "Lights Hook Bypass FIELD",
 		},
 		["d3216pnilunilcd40vd1vpnilvunil"] = {
 			["name"] = "Display mode takeoff",
@@ -467,7 +570,54 @@ local diff = {
 			},
 			["name"] = "STEER CMD AWL/PCD",
 		},
-		["d3705pnilu3705cd2vd1vpnilvu0"] = {
+		["d3319pnilunilcd48vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "I",
+					["reformers"] = {
+						[1] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Power OFF",
+		},
+		["d3319pnilunilcd48vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "I",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Power ON",
+		},
+		["d3323pnilunilcd48vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Down",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Channel Dec",
+		},
+		["d3323pnilunilcd48vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Up",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Channel Inc",
+		},
+		["d3385pnilu3385cd2vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "K",
@@ -476,7 +626,178 @@ local diff = {
 					},
 				},
 			},
-			["name"] = "Mic Button ICS - SRS Only / No Menu",
+			["name"] = "Mic Button UHF1 (ARC-159)",
+			["removed"] = {
+				[1] = {
+					["key"] = "\\",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+		},
+		["d3551pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num1",
+				},
+			},
+			["name"] = "Command 1",
+			["removed"] = {
+				[1] = {
+					["key"] = "1",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3552pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num2",
+				},
+			},
+			["name"] = "Command 2",
+			["removed"] = {
+				[1] = {
+					["key"] = "2",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3553pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num3",
+				},
+			},
+			["name"] = "Command 3",
+			["removed"] = {
+				[1] = {
+					["key"] = "3",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3554pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num4",
+				},
+			},
+			["name"] = "Command 4",
+			["removed"] = {
+				[1] = {
+					["key"] = "4",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3555pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num5",
+				},
+			},
+			["name"] = "Command 5",
+			["removed"] = {
+				[1] = {
+					["key"] = "5",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3556pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num6",
+				},
+			},
+			["name"] = "Command 6",
+			["removed"] = {
+				[1] = {
+					["key"] = "6",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3557pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num7",
+				},
+			},
+			["name"] = "Command 7",
+			["removed"] = {
+				[1] = {
+					["key"] = "7",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3558pnilunilcd62vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Num8",
+				},
+			},
+			["name"] = "Command 8",
+			["removed"] = {
+				[1] = {
+					["key"] = "8",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+		},
+		["d3640pnilunilcd11vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "T",
+					["reformers"] = {
+						[1] = "RAlt",
+						[2] = "RCtrl",
+					},
+				},
+			},
+			["name"] = "Exterior Lights Master Switch OFF",
+		},
+		["d3640pnilunilcd11vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "T",
+					["reformers"] = {
+						[1] = "LAlt",
+						[2] = "LCtrl",
+					},
+				},
+			},
+			["name"] = "Exterior Lights Master Switch ON",
+		},
+		["d3641pnilunilcd11vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "L",
+					["reformers"] = {
+						[1] = "LCtrl",
+					},
+				},
+			},
+			["name"] = "Exterior Lights Master Switch Toggle",
 		},
 		["d3706pnilu3706cd2vd1vpnilvu0"] = {
 			["added"] = {
@@ -499,6 +820,28 @@ local diff = {
 				},
 			},
 			["name"] = "Mic Button UHF2 (ARC-182) - SRS Only / No Menu",
+		},
+		["d3712pnilunilcd62vd1vpnilvunil"] = {
+			["name"] = "Close Menu",
+			["removed"] = {
+				[1] = {
+					["key"] = "A",
+					["reformers"] = {
+						[1] = "LShift",
+					},
+				},
+			},
+		},
+		["d3719pnilunilcd42vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "T",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "VDI Mode Toggle",
 		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {
@@ -544,6 +887,30 @@ local diff = {
 			},
 			["name"] = "Trim Roll Right Wing Down",
 		},
+		["dnilp211u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down Right slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num3",
+				},
+			},
+		},
+		["dnilp212u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num1",
+				},
+			},
+		},
+		["dnilp213u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Up Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num7",
+				},
+			},
+		},
 		["dnilp3083u3083cd57vdnilvp-1vu0"] = {
 			["added"] = {
 				[1] = {
@@ -565,6 +932,46 @@ local diff = {
 				},
 			},
 			["name"] = "DLC Thumbwheel Forward",
+		},
+		["dnilp32u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Left slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num4",
+				},
+			},
+		},
+		["dnilp33u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Right slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num6",
+				},
+			},
+		},
+		["dnilp34u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Up slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num8",
+				},
+			},
+		},
+		["dnilp35u214cdnilvdnilvpnilvunil"] = {
+			["name"] = "View Down slow",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num2",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "Num5",
+				},
+			},
 		},
 	},
 }

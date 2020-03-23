@@ -1,5 +1,41 @@
 local diff = {
 	["keyDiffs"] = {
+		["d3014pnilunilcd17vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "/",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Spoiler Only",
+		},
+		["d3014pnilunilcd17vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = ";",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Off",
+		},
+		["d3014pnilunilcd17vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "P",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "Antiskid & Spoiler BK - Both",
+		},
 		["d3024pnilu3024cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -143,7 +179,7 @@ local diff = {
 			},
 			["name"] = "Heading Hold On",
 		},
-		["d3040pnilu3040cd21vd1vpnilvu-1"] = {
+		["d3040pnilu3040cd21vd-1vpnilvu1"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "A",
@@ -152,7 +188,7 @@ local diff = {
 					},
 				},
 			},
-			["name"] = "Autopilot On, else Off",
+			["name"] = "Autopilot Off, else On",
 		},
 		["d3058pnilu3058cd22vd1vpnilvu0"] = {
 			["added"] = {
@@ -379,6 +415,29 @@ local diff = {
 			},
 			["name"] = "Target designate down / VSL LO",
 		},
+		["d3211pnilunilcd25vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "H",
+					["reformers"] = {
+						[1] = "RCtrl",
+					},
+				},
+			},
+			["name"] = "Lights Hook Bypass CARRIER",
+		},
+		["d3211pnilunilcd25vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "H",
+					["reformers"] = {
+						[1] = "RAlt",
+						[2] = "RCtrl",
+					},
+				},
+			},
+			["name"] = "Lights Hook Bypass FIELD",
+		},
 		["d3216pnilunilcd40vd1vpnilvunil"] = {
 			["name"] = "Display mode takeoff",
 			["removed"] = {
@@ -510,6 +569,53 @@ local diff = {
 				},
 			},
 			["name"] = "STEER CMD AWL/PCD",
+		},
+		["d3319pnilunilcd48vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "I",
+					["reformers"] = {
+						[1] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Power OFF",
+		},
+		["d3319pnilunilcd48vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "I",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Power ON",
+		},
+		["d3323pnilunilcd48vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Down",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Channel Dec",
+		},
+		["d3323pnilunilcd48vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "Up",
+					["reformers"] = {
+						[1] = "LCtrl",
+						[2] = "LShift",
+					},
+				},
+			},
+			["name"] = "ILS Channel Inc",
 		},
 		["d3385pnilu3385cd2vd1vpnilvu0"] = {
 			["added"] = {
@@ -714,6 +820,28 @@ local diff = {
 				},
 			},
 			["name"] = "Mic Button UHF2 (ARC-182) - SRS Only / No Menu",
+		},
+		["d3712pnilunilcd62vd1vpnilvunil"] = {
+			["name"] = "Close Menu",
+			["removed"] = {
+				[1] = {
+					["key"] = "A",
+					["reformers"] = {
+						[1] = "LShift",
+					},
+				},
+			},
+		},
+		["d3719pnilunilcd42vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "T",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
+				},
+			},
+			["name"] = "VDI Mode Toggle",
 		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {

@@ -67,7 +67,7 @@ MapKeyIO(&Throttle,SC,MOUSE_LEFT,USB[0x5D]); //mouse click, usb code 'num5' for 
 MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
 
 printf("   \xa");
-printf(" --------[ 59th Gemini F14B-PILOT Profile 0.5.0 ]-------- \xa");
+printf(" --------[ 59th Gemini F14B-PILOT Profile 0.5.2 ]-------- \xa");
 printf("   \xa");
 
 //////////////////////////////
@@ -119,9 +119,9 @@ MapKeyIO(&Joystick,H4P,0,L_SHIFT+'5');
 //MIC*
 MapKeyIO(&Throttle,MSU,L_SHIFT+UARROW,L_CTL+USB[0x55]);
 MapKeyIO(&Throttle,MSD,L_SHIFT+DARROW,L_SHIFT+USB[0x55]);
-MapKeyIO(&Throttle,MSL,L_SHIFT+LARROW,USB[0x31]);
+MapKeyIO(&Throttle,MSL,L_SHIFT+LARROW,R_CTL+USB[0x31]);
 MapKeyIO(&Throttle,MSR,L_SHIFT+RARROW,L_SHIFT+'k');
-MapKey(&Throttle,MSP,L_CTL+'d');
+MapKey(&Throttle,MSP,'a');
 
 
 //speedbrake
@@ -135,17 +135,17 @@ MapKeyIO(&Throttle,BSM,PULSE+L_ALT+USB[0x5e],0);
 MapKeyIO(&Throttle,BSF,PULSE+L_ALT+USB[0x61],0);
 
 //China hat
-MapKeyIO(&Throttle,CHB,L_SHIFT+'d',0);
-MapKeyIO(&Throttle,CHF,L_ALT+'d',0);
+MapKeyIO(&Throttle,CHB,L_SHIFT+'d',L_CTL+'d');
+MapKeyIO(&Throttle,CHF,L_ALT+'d',L_CTL+'d');
 
 
 //Pinkie
 //MapKey(&Throttle,PSB,0); //FREE usb code ''
-//MapKey(&Throttle,PSM,CHAIN(PULSE+L_SHIFT+USB[0x17],D(),LED(&Throttle,LED_ONOFF,LED_CURRENT-LED5))); //EXT LIGHTS OFF usb code 't' LED5 OFF
-//MapKey(&Throttle,PSF,CHAIN(PULSE+L_CTL+USB[0x17],D(),LED(&Throttle,LED_ONOFF,LED_CURRENT+LED5))); //EXT LIGHTS ON usb code 't' LED5 ON
+MapKey(&Throttle,PSM,PULSE+R_ALT+R_CTL+'t');
+MapKey(&Throttle,PSF,PULSE+L_ALT+L_CTL+'t');
 
 //Left ap button
-//MapKeyIO(&Throttle,LTB,REXEC(0, 90, "ActKey(KEYON+Eject);"),USB[0x28]); //Ejection script and BACKLIGHT BLINK usb code 'e', TDC DOWN ACTION usb code 'ENTER'
+MapKeyIO(&Throttle,LTB,0,L_CTL+'t');
 
 //Coolie
 MapKeyIO(&Throttle,CSU,L_ALT+USB[0x60],'[');
@@ -158,10 +158,10 @@ MapKeyIO(&Throttle,EFLNORM,0,PULSE+L_SHIFT+'p');
 MapKeyIO(&Throttle,EFRNORM,0,PULSE+R_SHIFT+'p');
 MapKeyIO(&Throttle,EFLOVER,0,PULSE+L_SHIFT+USB[0x33]);
 MapKeyIO(&Throttle,EFROVER,0,PULSE+R_SHIFT+USB[0x33]);
-MapKeyIO(&Throttle,EOLMOTOR,0,0);
-MapKeyIO(&Throttle,EORMOTOR,0,0);
+MapKey(&Throttle,EOLMOTOR,0,0);
+MapKey(&Throttle,EORMOTOR,0);
 MapKeyIO(&Throttle,EOLNORM,0,0);
-MapKeyIO(&Throttle,EORNORM,0,0);
+MapKey(&Throttle,EORNORM,0);
 MapKeyIO(&Throttle,EOLIGN,0,0);
 MapKeyIO(&Throttle,EORIGN,0,0);
 MapKeyIO(&Throttle,APUON,0,0);
@@ -177,8 +177,8 @@ MapKeyIO(&Throttle,APENG,0,L_SHIFT+'a');
 MapKeyIO(&Throttle,APPAT,0,PULSE+L_ALT+USB[0x5f]);
 MapKeyIO(&Throttle,APAH,0,PULSE+L_ALT+USB[0x5c]);
 MapKeyIO(&Throttle,APALT,0,PULSE+L_ALT+USB[0x59]);
-MapKey(&Throttle,IDLELON,0);
-MapKey(&Throttle,IDLERON,0);
+MapKey(&Throttle,IDLELON,L_ALT+LARROW);
+MapKey(&Throttle,IDLERON,L_ALT+RARROW);
 MapKey(&Throttle,IDLELOFF,0);
 MapKey(&Throttle,IDLEROFF,0);
 

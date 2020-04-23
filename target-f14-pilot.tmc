@@ -67,7 +67,7 @@ MapKeyIO(&Throttle,SC,MOUSE_LEFT,USB[0x5D]); //mouse click, usb code 'num5' for 
 MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
 
 printf("   \xa");
-printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.3 ]-------- \xa");
+printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.5 ]-------- \xa");
 printf("   \xa");
 
 //////////////////////////////
@@ -120,7 +120,7 @@ MapKeyIO(&Joystick,H4P,0,L_SHIFT+'5');
 MapKeyIO(&Throttle,MSU,L_SHIFT+UARROW,L_CTL+USB[0x55]);
 MapKeyIO(&Throttle,MSD,L_SHIFT+DARROW,L_SHIFT+USB[0x55]);
 MapKeyIO(&Throttle,MSL,L_SHIFT+LARROW,R_CTL+USB[0x31]);
-MapKeyIO(&Throttle,MSR,L_SHIFT+RARROW,L_SHIFT+'k');
+MapKeyIO(&Throttle,MSR,L_SHIFT+RARROW,R_SHIFT+USB[0x31]);
 MapKey(&Throttle,MSP,'a');
 
 
@@ -150,7 +150,7 @@ MapKeyIO(&Throttle,LTB,L_CTL+'t',L_ALT+'t');
 //Coolie
 MapKeyIO(&Throttle,CSU,L_ALT+USB[0x60],'[');
 MapKeyIO(&Throttle,CSD,L_ALT+USB[0x5d],']');
-MapKeyIO(&Throttle,CSL,R_ALT+USB[0x31],0);
+MapKeyIO(&Throttle,CSL,L_SHIFT+'k',0);
 MapKeyIO(&Throttle,CSR,R_CTL+USB[0x31],R_SHIFT+'k');
 
 //base

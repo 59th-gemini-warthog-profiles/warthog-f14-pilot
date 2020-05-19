@@ -67,7 +67,7 @@ MapKeyIO(&Throttle,SC,MOUSE_LEFT,USB[0x5D]); //mouse click, usb code 'num5' for 
 MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
 
 printf("   \xa");
-printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.6-snapshot ]-------- \xa");
+printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.6 ]-------- \xa");
 printf("   \xa");
 
 //////////////////////////////
@@ -140,7 +140,7 @@ MapKeyIO(&Throttle,CHF,L_ALT+'d',L_CTL+'d');
 
 
 //Pinkie
-//MapKey(&Throttle,PSB,0); //FREE usb code ''
+MapKey(&Throttle,PSB,0); //FREE usb code ''
 MapKey(&Throttle,PSM,PULSE+R_ALT+R_CTL+'t');
 MapKey(&Throttle,PSF,PULSE+L_ALT+L_CTL+'t');
 

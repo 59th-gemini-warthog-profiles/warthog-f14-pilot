@@ -135,8 +135,8 @@ MapKeyIO(&Throttle,BSM,PULSE+L_ALT+USB[0x5e],PULSE+L_SHIFT+L_CTL+USB[0x33]);
 MapKeyIO(&Throttle,BSF,PULSE+L_ALT+USB[0x61],PULSE+L_SHIFT+L_CTL+USB[0x13]);
 
 //China hat
-MapKeyIO(&Throttle,CHB,L_SHIFT+'d',L_CTL+'d');
-MapKeyIO(&Throttle,CHF,L_ALT+'d',L_CTL+'d');
+MapKeyIO(&Throttle,CHB,L_CTL+'d',L_SHIFT+'d');
+MapKeyIO(&Throttle,CHF,L_CTL+'d',L_ALT+'d');
 
 
 //Pinkie

@@ -40,14 +40,6 @@ local diff = {
 			},
 			["name"] = "Zoom View",
 		},
-		["a3083cd57"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER2",
-				},
-			},
-			["name"] = "DLC / Maneuver Flaps Retract",
-		},
 	},
 }
 return diff

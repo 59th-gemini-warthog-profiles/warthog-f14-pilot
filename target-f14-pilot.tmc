@@ -7,15 +7,16 @@ int Chainled ;
 int main() 
 { 
 
-Configure(&LMFD,MODE_EXCLUDED); 
-Configure(&RMFD,MODE_EXCLUDED);
-Configure(&HCougar,MODE_EXCLUDED);
-Configure(&T16000,MODE_EXCLUDED);
-Configure(&T16000L,MODE_EXCLUDED);
-Configure(&TFRPRudder,MODE_EXCLUDED);
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
 
 if(Init(&EventHandle)) return 1; //event handler
- 
+
 //shift button
 SetShiftButton(&Joystick,S4);
 
@@ -67,7 +68,7 @@ MapKeyIO(&Throttle,SC,MOUSE_LEFT,USB[0x5D]); //mouse click, usb code 'num5' for 
 MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
 
 printf("   \xa");
-printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.7 ]-------- \xa");
+printf(" --------[ JTFF Gemini F14B-PILOT Profile 0.5.9-snapshot ]-------- \xa");
 printf("   \xa");
 
 //////////////////////////////
@@ -78,8 +79,8 @@ printf("   \xa");
 MapKeyIO(&Joystick,TG1,0,USB[0x2C]);
 MapKeyIO(&Joystick,TG2,0,USB[0x2C]);
 
-MapKeyIO(&Joystick,S1,0,'c');
-MapKeyIO(&Joystick,S2,0,R_ALT+USB[0x2C]);
+MapKeyIO(&Joystick,S1,L_CTL+L_ALT+USB[0x59],'c');
+MapKeyIO(&Joystick,S2,USB[0x28],R_ALT+USB[0x2C]);
 MapKeyIO(&Joystick,S3,0,'n');
 
 //trim
@@ -95,10 +96,10 @@ MapKeyIO(&Joystick,H2L,R_ALT+LARROW,L_CTL+L_SHIFT+DARROW);
 MapKeyIO(&Joystick,H2R,R_ALT+RARROW,L_CTL+L_SHIFT+UARROW);
 
 //dms
-MapKeyIO(&Joystick,H3U,R_CTL+'s',0);
-MapKeyIO(&Joystick,H3D,R_SHIFT+'s',0);
-MapKeyIO(&Joystick,H3L,'s',0);
-MapKeyIO(&Joystick,H3R,R_ALT+'s',0);
+MapKeyIO(&Joystick,H3U,R_CTL+'s',L_CTL+L_SHIFT+USB[0x60]);
+MapKeyIO(&Joystick,H3D,R_SHIFT+'s',L_CTL+L_SHIFT+USB[0x5A]);
+MapKeyIO(&Joystick,H3L,'s',L_CTL+L_SHIFT+USB[0x5C]);
+MapKeyIO(&Joystick,H3R,R_ALT+'s',L_CTL+L_SHIFT+USB[0x5E]);
 
 //cms
 MapKeyIO(&Joystick,H4U,0,L_SHIFT+'2');
@@ -119,9 +120,9 @@ MapKeyIO(&Joystick,H4P,0,L_SHIFT+'5');
 //MIC*
 MapKeyIO(&Throttle,MSU,L_SHIFT+UARROW,L_CTL+USB[0x55]);
 MapKeyIO(&Throttle,MSD,L_SHIFT+DARROW,L_SHIFT+USB[0x55]);
-MapKeyIO(&Throttle,MSL,L_SHIFT+LARROW,R_CTL+USB[0x31]);
-MapKeyIO(&Throttle,MSR,L_SHIFT+RARROW,R_SHIFT+USB[0x31]);
-MapKey(&Throttle,MSP,'a');
+MapKeyIO(&Throttle,MSL,L_SHIFT+LARROW,0);
+MapKeyIO(&Throttle,MSR,L_SHIFT+RARROW,L_CTL+'k');
+MapKeyIO(&Throttle,MSP,L_CTL+USB[0x0e],'a');
 
 
 //speedbrake
@@ -135,8 +136,8 @@ MapKeyIO(&Throttle,BSM,PULSE+L_ALT+USB[0x5e],PULSE+L_SHIFT+L_CTL+USB[0x33]);
 MapKeyIO(&Throttle,BSF,PULSE+L_ALT+USB[0x61],PULSE+L_SHIFT+L_CTL+USB[0x13]);
 
 //China hat
-MapKeyIO(&Throttle,CHB,L_SHIFT+'d',L_CTL+'d');
-MapKeyIO(&Throttle,CHF,L_ALT+'d',L_CTL+'d');
+MapKeyIO(&Throttle,CHB,L_CTL+'d',L_SHIFT+'d');
+MapKeyIO(&Throttle,CHF,L_CTL+'d',L_ALT+'d');
 
 
 //Pinkie
@@ -163,9 +164,10 @@ MapKey(&Throttle,EORMOTOR,PULSE+L_SHIFT+USB[0x33]);
 MapKeyIO(&Throttle,EOLNORM,0,PULSE+L_CTL+L_SHIFT+'i');
 MapKey(&Throttle,EORNORM,PULSE+L_SHIFT+'p');
 MapKeyIO(&Throttle,EOLIGN,0,0);
-MapKeyIO(&Throttle,EORIGN,0,0);
-MapKeyIO(&Throttle,APUON,0,0);
-MapKeyIO(&Throttle,LDGH,L_ALT+'m',L_CTL+USB[0x64]);
+MapKey(&Throttle,EORIGN,L_SHIFT+L_CTL+'p');
+MapKeyIO(&Throttle,APUON,0,PULSE+'e');
+MapKeyIO(&Throttle,APUOFF,0,PULSE+R_SHIFT+'e');
+MapKeyIO(&Throttle,LDGH,L_ALT+'m',L_CTL+'r');
 MapKey(&Throttle,FLAPU,PULSE+L_SHIFT+'f');
 //MapKey(&Throttle,FLAPM,0);
 MapKey(&Throttle,FLAPD,PULSE+'f');
@@ -177,10 +179,10 @@ MapKeyIO(&Throttle,APENG,0,L_SHIFT+'a');
 MapKeyIO(&Throttle,APPAT,0,PULSE+L_ALT+USB[0x5f]);
 MapKeyIO(&Throttle,APAH,0,PULSE+L_ALT+USB[0x5c]);
 MapKeyIO(&Throttle,APALT,0,PULSE+L_ALT+USB[0x59]);
-MapKey(&Throttle,IDLELON,L_ALT+LARROW);
-MapKey(&Throttle,IDLERON,L_ALT+RARROW);
-MapKey(&Throttle,IDLELOFF,0);
-MapKey(&Throttle,IDLEROFF,0);
+MapKey(&Throttle,IDLELON,0);
+MapKey(&Throttle,IDLERON,0);
+MapKey(&Throttle,IDLELOFF,PULSE+L_ALT+LARROW);
+MapKey(&Throttle,IDLEROFF,PULSE+L_ALT+RARROW);
 
 } 
  
